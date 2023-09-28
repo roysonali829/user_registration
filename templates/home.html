@@ -1,0 +1,17 @@
+
+{% extends 'dummy.html' %}
+{% load static %}
+{% block title %}
+    <title>home</title>
+{% endblock %}
+
+{% block body_block %}
+
+<!-- <img src="{% static 'images/images.jpg' %}" class="block"> -->
+{% if username %}
+<h2>welcome to home {{username}}</h2>
+{% else %}
+<h2>welcome to home </h2>
+{% endif %}  
+
+{% endblock %}
